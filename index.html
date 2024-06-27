@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Verdade</title>
+    <style>
+*{
+    margin: 10px;
+}
+
+    button:hover{
+    background-color:rgb(115, 142, 163);
+    padding: 10px;
+    cursor: pointer;
+}
+
+.simbolos{
+    font-size: 13px;
+    padding: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 70px;
+    border-radius: 10px;
+    float: right;
+    width: 250px;
+    height: 80px;
+    background-color:rgb(221, 227, 235);
+}
+        button{
+            margin-left: 10px;
+            border-radius: 25px;
+            padding: 8px;
+            background-color:rgb(153, 180, 202);
+            border: 0;
+        }
+       form{
+            float: left;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        h1{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="simbolos">
+        Use "&" para operador lógico "e"
+        <br>
+        Use "|" para operador lógico "ou"
+        <br>
+        Use "~" para negação
+        <br>
+        Use "=>" para condicional
+        <br>
+        Use "<=>" para bicondicional
+    </div>
+
+    <h1 style="text-align: center;">Tabela Verdade</h1>
+    <form id="logicForm" style="text-align: center; margin-bottom: 20px;">
+        <label for="proposition">Digite a proposição lógica:</label>
+        <input type="text" id="proposition" name="proposition" placeholder="Ex: A & (B | C)">
+        <button type="submit">Gerar Tabela Verdade</button>
+    </form>
+    <div id="truthTable"></div>
+
+    <script src="logic.js"></script>
+
+</body>
+</html>

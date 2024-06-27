@@ -1,0 +1,39 @@
+*{
+    margin: 0 auto;
+
+}
+
+.texto h1{
+    content: rgb(153, 180, 202);
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.texto{
+    font-size: 18px;
+    text-align: justify;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 50px;
+    width: 1100px;
+    height: 400px;
+}
+
+.texto img{
+    margin: 15px;
+    width: 400px;
+    height: 200px;
+    float: right;
+}
+
+.imagens {
+    text-align: center;
+    margin-top: 100px;
+    width: 1100px;
+    height: 300px;
+}
+
+.imagens img{
+    margin: 10px;
+    height: 270px;
+    width: 490px;
+}
